@@ -17,7 +17,7 @@ function App(props) {
         borderRadius: 19,
         p: 2,
         minWidth: 300,
-
+        margin: 1
     }}
   >
     {system.name}
