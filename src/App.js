@@ -4,20 +4,9 @@ import { Link } from "react-router-dom";
 import { Symptom } from './components/Symptom';
 import { green } from '@mui/material/colors';
 
-function App() {
+function App(props) {
 
-  const bodySystemsData = [
-    { name: "Skeletal" },
-    { name: "Muscular" },
-    { name: "Nervous" },
-    { name: "Cardiovascular" },
-    { name: "Respiratory" },
-    { name: "Digestive" },
-    { name: "Urinary" },
-    { name: "Reproductive" },
-  ]
-
-  const bodySystemsList = bodySystemsData.map((system) => (
+  const bodySystemsList = props.bodySystemsData.map((system) => (
   <Button
     variant="contained"
     component={Link} to={system.name}
