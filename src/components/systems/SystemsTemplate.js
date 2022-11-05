@@ -14,7 +14,9 @@ export const SystemsTemplate = (props) => {
             borderRadius: 19,
             p: 1,
             minWidth: 300,
-            margin: 1
+            maxWidth: 300,
+            margin: 1,
+            whiteSpace: 'normal'
         }}
       >
         {symptom.name}
