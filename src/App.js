@@ -24,8 +24,7 @@ function App() {
   >
     {system.name}
   </Button>
-  ) 
-  );
+  ));
 
   return (
     <div className="App">
