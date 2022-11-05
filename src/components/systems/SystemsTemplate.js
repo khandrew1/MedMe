@@ -2,6 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Grid, Typography, Button } from '@mui/material';
 
+import '../../App.css';
+
 export const SystemsTemplate = (props) => {
 
     const symptomTemplate = props.symptomList.map((symptom) => (
@@ -30,7 +32,7 @@ export const SystemsTemplate = (props) => {
         <Typography variant="h1" className = "heading" >{props.name} System</Typography>
         </Grid>
         <Grid item xs={3.5}>
-            Photo Placeholder
+        <img src = {props.photo} key = {props.photo} alt="Main Page Photo" className = "widthSet"/>
         </Grid>
         <Grid item xs={3.5}>
             {symptomTemplate}

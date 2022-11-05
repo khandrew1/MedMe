@@ -1,4 +1,5 @@
 import './App.css';
+import React, { useState } from 'react';
 import{ Button, Typography, Grid,} from '@mui/material';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
@@ -8,6 +9,11 @@ import mainPagePhoto from './images/mainPagePhoto.png';
 
 
 function App(props) {
+
+  const currentPic = mainPagePhoto;
+
+  const [toggle, setToggle] = useState(currentPic);
+  const [key, setKey] = useState(false);
 
   const bodySystemsList = props.bodySystemsData.map((system) => (
   <Button
@@ -23,12 +29,12 @@ function App(props) {
         maxWidth: 300,
         margin: 1,
         whiteSpace: 'normal',
-    }}
+    }} 
   >
     {system.name}
   </Button>
-  ) 
-  );
+  ));
+
   return (
     <div className="App">
       <Grid container spacing={5} justifyContent="center" >
@@ -48,7 +54,7 @@ function App(props) {
     </Box>
         </Grid>
         <Grid item xs={3.5}>
-          <img src = {mainPagePhoto} alt="Main Page Photo" className = "widthSet"/>
+          <img src = {currentPic} key = {currentPic} alt="Main Page Photo" className = "widthSet"/>
         </Grid>
         <Grid item xs={3.5}>
           {bodySystemsList}
