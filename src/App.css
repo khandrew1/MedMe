@@ -1,5 +1,12 @@
 .heading{
-  color:cadetblue;
-  font-size: 50px;
+  color:rgb(120, 10, 10);
+  font-size: large;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.button{
+  color:rgb(164, 69, 69);
+  font-size:50px;
   text-align: center;
 }
