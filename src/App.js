@@ -1,5 +1,8 @@
 import './App.css';
 import{ Button, Typography, Box } from '@mui/material'
+import { Link } from "react-router-dom";
+import { Symptom } from './components/Symptom';
+import { Button } from '@mui/material'
 
 function App() {
   return (
