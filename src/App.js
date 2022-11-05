@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { Symptom } from './components/Symptom';
 import { green } from '@mui/material/colors';
 import { createTheme } from '@mui/material/styles';
+import mainPagePhoto from './images/mainPagePhoto.png';
 
 function App(props) {
 
@@ -15,9 +16,11 @@ function App(props) {
         bgcolor: 'primary.main',
         boxShadow: 8,
         borderRadius: 19,
-        p: 2,
+        p: 1,
         minWidth: 300,
-        margin: 1
+        maxWidth: 300,
+        margin: 1,
+        whiteSpace: 'normal',
     }}
   >
     {system.name}
@@ -33,7 +36,7 @@ function App(props) {
           <Typography variant="h1" className = "heading" >MedMe</Typography>
         </Grid>
         <Grid item xs={3.5}>
-          <img src = "https://img.favpng.com/7/2/8/human-anatomy-human-body-nervous-system-illustration-png-favpng-JWdvkggrxPxrQyvbGvH1ivQjC.jpg" alt="Main Page Photo" width = "300" height = "300"/>
+          <img src = {mainPagePhoto} alt="Main Page Photo" className = "widthSet"/>
         </Grid>
         <Grid item xs={3.5}>
           {bodySystemsList}
