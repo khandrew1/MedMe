@@ -2,6 +2,8 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import { SystemsTemplate } from './SystemsTemplate';
 
+import muscularPhoto from '../../images/Muscular.png';
+
 export const Muscular = () => {
 
   const symptomList = [
@@ -15,6 +17,7 @@ export const Muscular = () => {
     <SystemsTemplate
       name="Muscular"
       symptomList={symptomList}
+      photo={muscularPhoto}
     />
   )
 }

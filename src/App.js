@@ -1,12 +1,18 @@
 import './App.css';
+import React, { useState } from 'react';
 import{ Button, Typography, Grid} from '@mui/material'
 import { Link } from "react-router-dom";
-import { Symptom } from './components/Symptom';
+import { NextButton } from "./components/NextButton";
 import { green } from '@mui/material/colors';
 import { createTheme } from '@mui/material/styles';
 import mainPagePhoto from './images/mainPagePhoto.png';
 
 function App(props) {
+
+  const currentPic = mainPagePhoto;
+
+  const [toggle, setToggle] = useState(currentPic);
+  const [key, setKey] = useState(false);
 
   const bodySystemsList = props.bodySystemsData.map((system) => (
   <Button
@@ -21,14 +27,13 @@ function App(props) {
         maxWidth: 300,
         margin: 1,
         whiteSpace: 'normal',
-    }}
+    }} 
   >
     {system.name}
   </Button>
-  ) 
-  );
-  return (
+  ));
 
+  return (
     <div className="App">
       
       <Grid container spacing={5} justifyContent="center" >
@@ -36,13 +41,12 @@ function App(props) {
           <Typography variant="h1" className = "heading" >MedMe</Typography>
         </Grid>
         <Grid item xs={3.5}>
-          <img src = {mainPagePhoto} alt="Main Page Photo" className = "widthSet"/>
+          <img src = {currentPic} key = {currentPic} alt="Main Page Photo" className = "widthSet"/>
         </Grid>
         <Grid item xs={3.5}>
           {bodySystemsList}
         </Grid>
       </Grid>
-        
 
     </div>
   );

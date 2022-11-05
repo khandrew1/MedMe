@@ -2,6 +2,8 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import { SystemsTemplate } from './SystemsTemplate';
 
+import urinaryPhoto from '../../images/Urinary.png';
+
 export const Urinary = () => {
 
   const symptomList = [
@@ -15,6 +17,7 @@ export const Urinary = () => {
     <SystemsTemplate 
       name="Urinary"
       symptomList={symptomList}
+      photo={urinaryPhoto}
     />
   )
 }
