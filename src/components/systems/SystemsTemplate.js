@@ -16,7 +16,8 @@ export const SystemsTemplate = (props) => {
             minWidth: 300,
             maxWidth: 300,
             margin: 1,
-            whiteSpace: 'normal'
+            whiteSpace: 'normal',
+            textAlign: 'center'
         }}
       >
         {symptom.name}
