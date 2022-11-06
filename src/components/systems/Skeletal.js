@@ -7,9 +7,9 @@ import skeletalPhoto from '../../images/Skeletal.png';
 export const Skeletal = () => {
 
   const symptomList = [
-    { name: "Muscle Pain" },
-    { name: "Rashes" },
-    { name: "Swollen/Painful Joints"}
+    { name: "Muscle Pain", link:"MusclePain" },
+    { name: "Rashes", link:"Rashes" },
+    { name: "Swollen/Painful Joints", link:"PainfulJoints"}
   ]
 
   return (

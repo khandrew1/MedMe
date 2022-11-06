@@ -7,9 +7,9 @@ import nervousPhoto from '../../images/Nervous.png';
 export const Nervous = () => {
 
   const symptomList = [
-    { name: "Persistant Headache" },
-    { name: "Loss of feeling or tingling" },
-    { name: "Back pain which radiates through body"}
+    { name: "Persistant Headache", link: "PersistantHeadache" },
+    { name: "Loss of feeling or tingling", link:"Loss" },
+    { name: "Back pain which radiates through body", link: "RadiatePain"}
   ];
 
   return (

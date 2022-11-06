@@ -8,10 +8,9 @@ export const Respiratory = () => {
 
   const symptomList = [
     { name: "Persistant Cough", link: "PersistantCough" },
-    { name: "Fatigue" },
-    { name: "Breathlessness or Wheeze"},
-    { name: "Chest Congestion"},
-    { name: "Mucus Production"}
+    { name: "Breathlessness or Wheeze", link: "Wheeze" },
+    { name: "Chest Congestion", link: "ChestCongestion" },
+    { name: "Mucus Production", link: "MucusProduction" }
   ]
 
   return (

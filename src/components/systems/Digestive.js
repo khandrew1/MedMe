@@ -7,11 +7,11 @@ import digestPhoto from '../../images/Digestive.png';
 export const Digestive = () => {
   
   const symptomList = [
-    { name: "Bloating" },
-    { name: "Constipation" },
-    { name: "Diarrhea" },
-    { name: "Heartburn" },
-    { name: "Nausea and Vomiting"}
+    { name: "Bloating", link:"Bloating" },
+    { name: "Constipation", link:"Constipation" },
+    { name: "Diarrhea", link:"Diarrhea" },
+    { name: "Heartburn", link:"Heartburn" },
+    { name: "Nausea and Vomiting", link:"Nausea"}
   ];
 
   return (

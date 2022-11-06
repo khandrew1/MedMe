@@ -7,10 +7,10 @@ import urinaryPhoto from '../../images/Urinary.png';
 export const Urinary = () => {
 
   const symptomList = [
-    { name: "Strong urge to urinate often" },
-    { name: "Burning while Urinating" },
-    { name: "Strong-smelling urine" },
-    { name: "Pelvic Pain" },
+    { name: "Strong urge to urinate often", link: "Urge" },
+    { name: "Burning while Urinating", link:"Burning" },
+    { name: "Strong-smelling urine", link:"Smell" },
+    { name: "Pelvic Pain", link:"PelvicPain" },
   ]
 
   return (
