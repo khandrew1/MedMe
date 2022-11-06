@@ -7,10 +7,8 @@ import muscularPhoto from '../../images/Muscular.png';
 export const Muscular = () => {
 
   const symptomList = [
-    { name: "Muscle Weakness" },
-    { name: "Cramps" },
-    { name: "Muscle Loss" },
-    { name: "Tingling or Painful Sensations"}
+    { name: "Cramps", link:"Cramps" },
+    { name: "Tingling or Painful Sensations", link:"Tingling"}
   ];
 
   return (
