@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Grid, Typography, Button } from '@mui/material';
+import { Grid, Typography, Button, AppBar, Box, Toolbar } from '@mui/material';
 
 import '../../App.css';
 
@@ -11,7 +11,8 @@ export const SystemsTemplate = (props) => {
         variant="contained"
         component={Link} to={symptom.link}
         sx = {{
-            bgcolor: 'primary.main',
+            textAlign: 'center',
+            bgcolor: '#2E3B55',
             boxShadow: 8,
             borderRadius: 19,
             p: 1,
@@ -19,7 +20,6 @@ export const SystemsTemplate = (props) => {
             maxWidth: 300,
             margin: 1,
             whiteSpace: 'normal',
-            textAlign: 'center'
         }}
       >
         {symptom.name}
@@ -28,9 +28,20 @@ export const SystemsTemplate = (props) => {
 
     return (
         <Grid container spacing={5} justifyContent="center" >
-        <Grid item xs={12}>
-        <Typography variant="h1" className = "heading" >{props.name} System</Typography>
-        </Grid>
+            <Grid item xs={12}>
+                <Box sx={{ flexGrow: 1 }}>
+                <AppBar position="static" style = {{background: '#2E3B55'}}>
+                    <Toolbar>
+                        <Typography variant="header" component="div" className = "systemHeading" 
+                            sx={{ 
+                            flexGrow: 2,
+                            }}>
+                            {props.name}
+                        </Typography>
+                    </Toolbar>
+                </AppBar>
+                </Box>
+            </Grid>
         <Grid item xs={3.5}>
         <img src = {props.photo} key = {props.photo} alt="Main Page Photo" className = "widthSet"/>
         </Grid>
