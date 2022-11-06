@@ -29,12 +29,22 @@ export const MedicineTemplate = (props) => {
         </Grid>
 
         <Grid item xs={3.5}>
-            <img src = {AdvilPhoto} key = {props.photo} alt="Main Page Photo" className = "widthSet"/>
+            <Box sx = {{
+                width:300,
+                height:300
+            }}>
+                <img src = {AdvilPhoto} key = {props.photo} alt="Main Page Photo" className = "widthSet"/>
+            </Box>
+    
         </Grid>
 
         <Grid item xs={3.5}>
-            <Box sx={{ flexGrow: 1, borderColor: 'text.primary' }}>
-               
+            <Box sx={{ 
+                flexGrow: 1, 
+                borderColor: 'text.primary',
+                width:300,
+                height:300
+                }}>
                     <Toolbar>
                         <Typography variant="header" component="div" className = "medicineNames" 
                             sx={{ 
