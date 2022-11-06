@@ -7,6 +7,19 @@
   padding: 1%;
 }
 
+.medicineNames{
+  color:black;
+  font-size: 50px;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 10;
+  padding: 40%;
+}
+
+.box{
+  color:black;
+}
+
 .systemHeading {
   color:rgb(255, 255, 255);
   font-size: 50px;
