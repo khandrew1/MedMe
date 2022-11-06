@@ -9,11 +9,13 @@ import tylenol from '../../../images/MedicineImages/Acetaminophin.png'
 export const Tingling = () => {
 
     const meds = [
-        {name: "Guaifenesin"},
-        {name: "Tylenol (Acetaminophen)"}
+        {name: "Guaifenesin", photo: guaifenesin},
+        {name: "Tylenol (Acetaminophen)", photo: tylenol}
     ]
 
   return (
-    <div>Tingling</div>
+    <MedicineTemplate
+       medList={meds}
+    />
   )
 }

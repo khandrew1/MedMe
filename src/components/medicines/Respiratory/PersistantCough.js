@@ -9,11 +9,13 @@ import halls from '../../../images/MedicineImages/HallsRelief.png'
 export const PersistantCough = () => {
 
   const meds = [
-    {name: "Robitussin"},
-    {name: "Cough Drops"}
+    {name: "Robitussin", photo: robitussin},
+    {name: "Cough Drops", photo: halls}
   ]
 
   return (
-    <MedicineTemplate />
+    <MedicineTemplate
+       medList={meds}
+    />
   )
 }

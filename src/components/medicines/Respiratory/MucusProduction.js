@@ -9,11 +9,13 @@ import vicks from '../../../images/MedicineImages/VicksFormula44.png'
 export const MucusProduction = () => {
 
   const meds = [
-    {name: "Robitussin Cough"},
-    {name: "Vicks 44 Cough and Cold"}
+    {name: "Robitussin Cough", photo: robitussin},
+    {name: "Vicks 44 Cough and Cold", photo: vicks}
   ]
 
   return (
-    <div>MucusProduction</div>
+    <MedicineTemplate
+       medList={meds}
+    />
   )
 }

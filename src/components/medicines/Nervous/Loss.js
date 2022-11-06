@@ -10,12 +10,14 @@ import ibuprofen from '../../../images/MedicineImages/Ibuprofen.png'
 export const Loss = () => {
 
     const meds = [
-        {name: "Tylenol (Acetaminophen)"},
-        {name: "Asprin"},
-        {name: "Ibuprofen"}
+        {name: "Tylenol (Acetaminophen)", photo: tylenol},
+        {name: "Asprin", photo: asprin},
+        {name: "Ibuprofen", photo: ibuprofen}
     ]
 
   return (
-    <div>Loss</div>
+    <MedicineTemplate
+    medList={meds}
+ />
   )
 }

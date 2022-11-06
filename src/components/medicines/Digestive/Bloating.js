@@ -8,11 +8,13 @@ import lactase from '../../../images/MedicineImages/LactaseEnzyme.png'
 export const Bloating = () => {
 
     const meds = [
-        {name: "Pepto-Bismol"},
-        {name: "Lactase Enzyme"}
+        {name: "Pepto-Bismol", photo: pepto},
+        {name: "Lactase Enzyme", photo: lactase}
     ]
 
   return (
-    <div>Bloating</div>
+    <MedicineTemplate
+        medList={meds}
+    />
   )
 }

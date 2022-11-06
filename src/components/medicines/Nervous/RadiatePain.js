@@ -8,10 +8,12 @@ import aleve from '../../../images/MedicineImages/Aleve.png'
 export const RadiatePain = () => {
 
     const meds = [
-        {name: "Aleve"}
+        {name: "Aleve", photo: aleve}
     ]
     
   return (
-    <div>RadiatePain</div>
+    <MedicineTemplate
+       medList={meds}
+    />
   )
 }

@@ -11,13 +11,15 @@ import midol from '../../../images/MedicineImages/Midol.png'
 export const MusclePain = () => {
 
     const meds = [
-        {name: "Ibuprofen"},
-        {name: "Advil"},
-        {name: "Motrin"},
-        {name: "Midol"}
+        {name: "Ibuprofen", photo: ibuprofen},
+        {name: "Advil", photo: advil},
+        {name: "Motrin", photo: motrin},
+        {name: "Midol", photo: midol}
     ]
 
   return (
-    <div>MusclePain</div>
+    <MedicineTemplate
+       medList={meds}
+    />
   )
 }

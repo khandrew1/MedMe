@@ -8,10 +8,12 @@ import pepto from '../../../images/MedicineImages/PeptoBismol.png'
 export const Nausea = () => {
     
     const meds = [
-        {name: "Pepto-Bismol"}
+        {name: "Pepto-Bismol", photo: pepto}
     ]
 
   return (
-    <div>Nausea</div>
+    <MedicineTemplate
+    medList={meds}
+    />
   )
 }

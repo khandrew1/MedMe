@@ -6,10 +6,12 @@ import tylenol from '../../../images/MedicineImages/Acetaminophin.png'
 
 export const ChestPain = () => {
     const meds = [
-        {name: "Tylenol (acetaminophen)"}
+        { name: "Tylenol (acetaminophen)", photo: tylenol }
     ]
 
   return (
-    <div>ChestPain</div>
-  )
+    <MedicineTemplate
+       medList={meds}
+    />  
+)
 }

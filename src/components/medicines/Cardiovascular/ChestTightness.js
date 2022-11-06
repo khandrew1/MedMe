@@ -8,11 +8,13 @@ import mucinex from '../../../images/MedicineImages/Mucinex.png'
 export const ChestTightness = () => {
 
     const meds = [
-        { name: "Robitussin" },
-        { name: "Mucinex" }
+        { name: "Robitussin", photo: robitussin },
+        { name: "Mucinex", photo: mucinex }
     ]
 
   return (
-    <div>ChestTightness</div>
+    <MedicineTemplate
+    medList={meds}
+    />
   )
 }

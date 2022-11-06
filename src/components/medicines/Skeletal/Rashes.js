@@ -10,12 +10,14 @@ import cetrizine from '../../../images/MedicineImages/Zyrtec.png'
 export const Rashes = () => {
 
     const meds = [
-        {name: "Cortizone 10"},
-        {name: "Prednisone (Benadryl)"},
-        {name: "Cetrizine (Zyrtec)"}
+        {name: "Cortizone 10", photo: cortizone},
+        {name: "Prednisone (Benadryl)", photo: prednisone},
+        {name: "Cetrizine (Zyrtec)", photo: cetrizine}
     ]
 
   return (
-    <div>Rashes</div>
+    <MedicineTemplate
+       medList={meds}
+    />
   )
 }
