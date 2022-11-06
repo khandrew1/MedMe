@@ -9,13 +9,15 @@ import motrinPic from '../../../images/MedicineImages/Motrin.png'
 
 export const PelvicPain = () => {
 
-    const med = [
-        {name: "Ibuprofen"},
-        {name: "Aleve"},
-        {name: "Motrin"}
+    const meds = [
+        {name: "Ibuprofen", photo: ibuprofenPic},
+        {name: "Aleve", photo: alevePic},
+        {name: "Motrin", photo: motrinPic}
     ]
 
   return (
-    <div>PelvicPain</div>
+    <MedicineTemplate
+       medList={meds}
+    />
   )
 }

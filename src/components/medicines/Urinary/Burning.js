@@ -9,11 +9,13 @@ import monurol from '../../../images/MedicineImages/Monurol.png'
 export const Burning = () => {
 
     const meds = [
-        {name: "AZO Urinary Pain Relief"},
-        {name: "Fosfomycin (Monurol)"}
+        {name: "AZO Urinary Pain Relief", photo: azo},
+        {name: "Fosfomycin (Monurol)", photo: monurol}
     ]
 
   return (
-    <div>Burning</div>
+    <MedicineTemplate
+       medList={meds}
+    />
   )
 }

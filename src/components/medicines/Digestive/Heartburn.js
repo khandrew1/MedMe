@@ -10,12 +10,14 @@ import tums from '../../../images/MedicineImages/Tums.png'
 export const Heartburn = () => {
 
     const meds = [
-        {name: "Mylanta"},
-        {name: "Rolaids"},
-        {name: "Tums"}
+        {name: "Mylanta", photo: mylanta},
+        {name: "Rolaids", photo: rolaids},
+        {name: "Tums", photo: tums}
     ]
 
   return (
-    <div>Heartburn</div>
+    <MedicineTemplate
+        medList={meds}
+    />
   )
 }

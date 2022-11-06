@@ -9,11 +9,13 @@ import pepto from '../../../images/MedicineImages/PeptoBismol.png'
 export const Diarrhea = () => {
 
     const meds = [
-        {name: "Imodium A-D (Ioperamide)"},
-        {name: "Pepto-Bismol"}
+        {name: "Imodium A-D (Ioperamide)", photo: imodium},
+        {name: "Pepto-Bismol", photo: pepto}
     ]
 
   return (
-    <div>Diarrhea</div>
+    <MedicineTemplate
+    medList={meds}
+    />
   )
 }

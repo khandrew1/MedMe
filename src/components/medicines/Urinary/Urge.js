@@ -8,12 +8,14 @@ import vesicare from '../../../images/MedicineImages/Vesicare.png'
 
 export const Urge = () => {
 
-    const medData = [
-        {name: "Oxytrol for Women (Oxybutynin)"},
-        {name: "Solifenacin (Vesicare)"}
+    const meds = [
+        {name: "Oxytrol for Women (Oxybutynin)", photo: oxy},
+        {name: "Solifenacin (Vesicare)", photo: vesicare}
     ]
 
   return (
-    <div>Urge</div>
+    <MedicineTemplate
+       medList={meds}
+    />
   )
 }

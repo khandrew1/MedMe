@@ -5,16 +5,19 @@ import { MedicineTemplate } from '../MedicineTemplate'
 
 import naproxen from '../../../images/MedicineImages/NaproxenSodium.png'
 import tylenol from '../../../images/MedicineImages/Acetaminophin.png'
+import ibuprofen from '../../../images/MedicineImages/Ibuprofen.png'
 
 export const Cramps = () => {
 
     const meds = [
-        {name: "Naproxen"},
-        {Name: "Tylenol (Acetaminophen)"},
-        {Name: "Ibuprofen"}
+        {name: "Naproxen", photo: naproxen},
+        {Name: "Tylenol (Acetaminophen)", photo: tylenol},
+        {Name: "Ibuprofen", photo: ibuprofen}
     ]
     
   return (
-    <div>Cramps</div>
+    <MedicineTemplate
+    medList={meds}
+    />
   )
 }

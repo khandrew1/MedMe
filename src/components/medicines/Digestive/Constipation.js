@@ -10,12 +10,14 @@ import pedia from '../../../images/MedicineImages/Pedialax.png'
 export const Constipation = () => {
 
     const meds = [
-        {name: "miraLAX"},
-        {name: "Dulcolax"},
-        {name: "Pedia-Lax"},
+        {name: "miraLAX", photo: miralax},
+        {name: "Dulcolax", photo: dulcolax},
+        {name: "Pedia-Lax", photo: pedia},
     ]
 
   return (
-    <div>Constipation</div>
+    <MedicineTemplate
+        medList={meds}
+    />
   )
 }

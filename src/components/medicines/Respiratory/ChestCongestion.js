@@ -9,11 +9,13 @@ import mucinex from '../../../images/MedicineImages/Mucinex.png'
 export const ChestCongestion = () => {
 
     const meds = [
-        {name: "Robitussin (Dextromethorphan)"},
-        {name: "Mucinex (Guaifenesin)"}
+        {name: "Robitussin (Dextromethorphan)", photo: robitussin},
+        {name: "Mucinex (Guaifenesin)", photo: mucinex}
     ]
 
   return (
-    <div>ChestCongestion</div>
+    <MedicineTemplate
+       medList={meds}
+    />
   )
 }

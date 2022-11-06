@@ -8,10 +8,12 @@ import derifil from '../../../images/MedicineImages/Etophylline.png'
 export const Smell = () => {
 
     const meds = [
-        {name: "Derifil"}
+        {name: "Derifil", photo: derifil}
     ]
 
   return (
-    <div>Smell</div>
+    <MedicineTemplate
+       medList={meds}
+    />
   )
 }

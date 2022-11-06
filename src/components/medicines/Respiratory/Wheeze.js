@@ -8,11 +8,13 @@ import primatene from '../../../images/MedicineImages/PrimateneMist.png'
 export const Wheeze = () => {
 
     const meds = [
-        {name: "Asthmanefrine (Racepinephrine)"},
-        {name: "Primatene Mist (Epinephrine)"}
+        {name: "Asthmanefrine (Racepinephrine)", photo: asthmanefrine},
+        {name: "Primatene Mist (Epinephrine)", photo: primatene}
     ]
 
   return (
-    <MedicineTemplate />
+    <MedicineTemplate
+       medList={meds}
+    />
   )
 }

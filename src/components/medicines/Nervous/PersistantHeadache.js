@@ -10,12 +10,14 @@ import bayer from '../../../images/MedicineImages/Bayer.png'
 export const PersistantHeadache = () => {
 
     const meds = [
-        {name: "Ibuprofen"},
-        {name: "Aleve"},
-        {name: "Bayer"}
+        {name: "Ibuprofen", photo: ibuprofen},
+        {name: "Aleve", photo: aleve},
+        {name: "Bayer", photo: bayer}
     ]
 
   return (
-    <div>PersistantHeadache</div>
+    <MedicineTemplate
+    medList={meds}
+ />
   )
 }
