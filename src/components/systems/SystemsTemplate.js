@@ -9,7 +9,7 @@ export const SystemsTemplate = (props) => {
     const symptomTemplate = props.symptomList.map((symptom) => (
         <Button
         variant="contained"
-        component={Link} to={symptom.name}
+        component={Link} to={symptom.link}
         sx = {{
             bgcolor: 'primary.main',
             boxShadow: 8,
