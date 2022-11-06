@@ -48,7 +48,7 @@ export const MedicineTemplate = (props) => {
                 </AppBar>
             </Box>
         </Grid>
-
+        
     <Grid item xs={3.5}>
         {medPhotoTemplate}
     </Grid>

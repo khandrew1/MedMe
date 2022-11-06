@@ -58,6 +58,21 @@ function App(props) {
         <Grid item xs={3.5}>
           {bodySystemsList}
         </Grid>
+          <Grid item xs={12}>
+            <Box sx={{ flexGrow: 1 }}>
+              <AppBar position="static" style = {{background: '#2E3B55'}}>
+                <Toolbar>
+                  <Typography variant="header" component="div" className = "covidwarning" 
+                    sx={{ 
+                    flexGrow: 2,
+                  }}>
+                    COVID-19 Warning: In an effort to reduce the risk of COVID-19 exposure, and to help prevent the spread of the virus, please take a PCR test if experiencing symptoms such as: fever, cough, or shortness of breath.
+                  </Typography>
+                </Toolbar>
+              </AppBar>
+            </Box>
+          </Grid>
+      
       </Grid>
     </div>
    
