@@ -7,7 +7,7 @@ import respPhoto from '../../images/Respiratory.png';
 export const Respiratory = () => {
 
   const symptomList = [
-    { name: "Persistant Cough" },
+    { name: "Persistant Cough", link: "PersistantCough" },
     { name: "Fatigue" },
     { name: "Breathlessness or Wheeze"},
     { name: "Chest Congestion"},
