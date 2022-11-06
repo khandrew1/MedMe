@@ -4,16 +4,16 @@ import { Link } from 'react-router-dom';
 import { MedicineTemplate } from '../MedicineTemplate'
 
 import robitussin from '../../../images/MedicineImages/Robitussin.png'
-import halls from '../../../images/MedicineImages/HallsRelief.png'
+import vicks from '../../../images/MedicineImages/VicksFormula44.png'
 
-export const PersistantCough = () => {
+export const MucusProduction = () => {
 
   const meds = [
-    {name: "Robitussin"},
-    {name: "Cough Drops"}
+    {name: "Robitussin Cough"},
+    {name: "Vicks 44 Cough and Cold"}
   ]
 
   return (
-    <MedicineTemplate />
+    <div>MucusProduction</div>
   )
 }
