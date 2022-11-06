@@ -39,18 +39,17 @@ function App(props) {
     <div className="App">
       <Grid container spacing={5} justifyContent="center" >
         <Grid item xs={12}>
-        <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static" style = {{background: '#2E3B55'}}>
-        <Toolbar>
-          <Typography variant="header" component="div" className = "heading" 
-          sx={{ 
-            flexGrow: 2,
-            }}>
-            MedMe
+          <Box sx={{ flexGrow: 1 }}>
+            <AppBar position="static" style = {{background: '#2E3B55'}}>
+              <Toolbar>
+                <Typography variant="header" component="div" className = "heading" 
+                  sx={{ 
+                  flexGrow: 2,
+                }}>
+              MedMe
           </Typography>
         </Toolbar>
       </AppBar>
-
     </Box>
         </Grid>
         <Grid item xs={3.5}>
