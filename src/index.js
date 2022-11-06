@@ -11,6 +11,8 @@ import { Digestive } from "./components/systems/Digestive";
 import { Urinary } from "./components/systems/Urinary";
 import { Reproductive } from './components/systems/Reproductive';
 
+import { PersistantCough } from './components/medicines/Respiratory/PersistantCough';
+
 import skeletalPhoto from './images/Skeletal.png';
 import muscularPhoto from './images/Muscular.png';
 import nervousPhoto from './images/Nervous.png';
@@ -37,8 +39,16 @@ const bodySystemsData = [
   { name: "Reproductive", element: <Reproductive />, photo: reprodPhoto },
 ]
 
-const routeList = bodySystemsData.map((system) => (
+const medicineData = [
+  { name: "PersistantCough", element: <PersistantCough /> }
+]
+
+const systemRouteList = bodySystemsData.map((system) => (
   <Route path={system.name} element={system.element} />
+));
+
+const medicineRouteList = medicineData.map((medicine) => (
+  <Route path={`/Respiratory/${medicine.name}`} element={medicine.element} />
 ));
 
 root.render(
@@ -46,7 +56,8 @@ root.render(
   <React.StrictMode>
     <Routes>
       <Route path="/" element={<App bodySystemsData={bodySystemsData} />} />
-      {routeList}
+      {systemRouteList}
+      {medicineRouteList}
     </Routes>
   </React.StrictMode>
   </BrowserRouter>
