@@ -6,10 +6,10 @@ import cardioPhoto from '../../images/Cardiovascular.png';
 
 export const Cardiovascular = () => {
   const symptomList = [
-    { name: "Chest Pain" },
-    { name: "Chest Tightness" },
-    { name: "Shortness of Breath" },
-    { name: "Pain in neck, jaw, throat, belly or back" }
+    { name: "Chest Pain", link: "ChestPain" },
+    { name: "Chest Tightness", link: "ChestTightness" },
+    { name: "Shortness of Breath", link: "Breath" },
+    { name: "Pain in neck, jaw, throat, belly or back", link:"NeckPain" }
   ]
 
   return (
