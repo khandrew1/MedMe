@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom/client';
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -49,7 +49,6 @@ import cardioPhoto from './images/Cardiovascular.png';
 import respPhoto from './images/Respiratory.png';
 import digestPhoto from './images/Digestive.png';
 import urinaryPhoto from './images/Urinary.png';
-import reprodPhoto from './images/MaleReproductive.png'
 
 import './index.css';
 
